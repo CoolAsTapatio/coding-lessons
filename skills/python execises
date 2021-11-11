@@ -1,0 +1,30 @@
+# Untitled.py
+# Created by Kids on 2/9/21.
+def palendrome(text_):
+	if text_[0] != text_[-1]:
+		return "that is not a palendrome"
+	elif len(text_) == 0 or len(text_) == 1 or (len(text_) == 2 and text_[0] == text_[-1]):
+		return "that is a palendrome"
+	else: 
+		text_ = text_[1: -1]
+		return palendrome(text_)
+def digits(number):
+	number2 = str(number)
+	if len(number2) == 1:
+		return number
+	else:
+		var = 0
+		for i in number2:
+			var += int(i)
+		return digits(var)
+def recurser(list_, currentnum):
+	if currentnum not in list_:
+		return currentnum
+	else:
+		return recurser(list_, currentnum + 1)
+if __name__ == "__main__":
+	#the_list_of_nums = [0, 1 , 2, 4, 3, 5, 6, 9, 8, 10]
+	#print(recurser(the_list_of_nums, 0))
+	#print(digits(123456789))
+	imput = input("tell me something that I don't know\n")
+	print(palendrome(imput))

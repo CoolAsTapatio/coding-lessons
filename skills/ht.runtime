@@ -1,0 +1,17 @@
+# ht runtime for a lookup ex, ht of key, or key in ht are O(1) expected case
+def the_funk(a, b):
+	if a in b:#O(1) expected
+		return b[a] # O(1) expected
+	else:
+		return "wah, wah, wah"	
+def the_funk_p2(list_, hash_potatoes):
+	for i in list_: # O(l) worst case
+		if i in hash_potatoes: # O(1) expected case
+			print("089 is da best")	# (1) worst case
+		else:
+			print("sucky spears")			
+if __name__ == "__main__":
+	product_price = {"box 1" : 800, "box 2" : 950, "box 3" : 150, "box 3 deluxe" : 2500, "salad bowl (mango)" : 500}
+	#answer = input("what product would you like to buy today?\n")
+	zha_list = ["box 8", "Picture frame 1", "picture frame 2", "industrial desk", " koa acoustic guitar", "box 3", "salad bowl (mango)", "mahogany acoustic - electric guitar"]
+	the_funk_p2(zha_list, product_price)

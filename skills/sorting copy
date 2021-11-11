@@ -1,0 +1,39 @@
+# Untitled 2.py
+# Created by Kids on 8/31/21.
+
+#O(2n^2 + 1)
+def my_sort(unsorted):
+	sorted_list = [] # O(1)
+	while len(unsorted_list) > 0: #O(n) n = len(unsorted list)
+		sorted_list.append(min(unsorted_list))# O(n)
+		unsorted_list.remove(min(unsorted_list))# O(n)
+	return sorted_list
+	
+def my_min(to_find_min_of):
+	current_min = to_find_min_of[0] # O(2)
+	for i in to_find_min_of: #O(n)
+		if i < current_min: #0(1)
+			current_min = i # 0(1)
+	return current_min # 0(1)
+def unit_test_1():
+	to_find_mind = [1, 3, 91, -20, 3]
+	expected = -20
+	result = my_min(to_find_mind)
+	if expected == result:
+		print("Test 1: Pass")
+	else:
+		print("Test 1: Fail")
+def unit_test_2():
+	to_find_mind = [100000, 3450, -245, -96, 303]
+	expected = -245
+	result = my_min(to_find_mind)
+	if expected == result:
+		print("Test 2: Pass")
+	else:
+		print("Test 2: Fail")
+if __name__ == "__main__":
+	unsorted_list = [1, 12, 90, 32, -1, 34, 21, 1231, 1232, 123, 1, 34, 987, 452]
+	#sorted_v = my_sort(unsorted_list)
+#	print(sorted_v)
+	unit_test_1()
+	unit_test_2()
