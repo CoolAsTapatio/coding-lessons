@@ -1,0 +1,14 @@
+# Untitled.py
+# Created by Kids on 2/16/22.
+1. have a problem /what is it?
+2. get thy info (do your research, what previously entered that idea and why did it fail)
+	most important part, ask the five Ys
+3.stakeholder analysis(people who have a part in what you are doing)
+4.boundary analysis (what cannot be done?)
+5.hazard analysis (what could go wrong?)
+6.user scenario scripts (where you right out a bunch of things that your users want to get out of your product)
+7.creative brainstorming process (come up with as many ideas as possible, no bad ideas)
+8.downselecting (figuring out which ideas are bad and eliminate them, arriving at a final solution)
+9.prototyping (make the first drafts of thy product)
+10. verification (verify the product and test it with users)
+(loop back to step 6)

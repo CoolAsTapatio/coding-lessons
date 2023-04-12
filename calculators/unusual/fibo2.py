@@ -36,4 +36,4 @@ def go(n, a, b):
 	else:
 		return go(n-1, b, b+a)
 if __name__ == "__main__":
-	print(tail_fibo(977))
+	print(tail_fibo(8))
